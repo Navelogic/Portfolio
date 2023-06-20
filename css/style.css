@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* VARIAVEIS */
+:root{
+    --cor-primaria: #22D4FD;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #1b1a1a;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 1% 0% 0% 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+
+}
+
+.cabecalho__menu__link{
+    color: var(--cor-primaria);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.titulo-destaque{
+    color: var(--cor-primaria);
+}
+
+.apresentacao{
+    padding: 4.57% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.80rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__conteudo__texto__sobre {
+    width: 90%;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.apresentacao__conteudo__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.apresentacao__conteudo__links__subtitulo{
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.apresentacao__conteudo__links__link{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-primaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color:var(--cor-secundaria);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__conteudo__links__link:hover{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+}
+
+.imagem_sobre_primeira{
+    display: none;
+    width: 53%;
+    flex-direction: column;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE */
+    border-radius: 2%;
+}
+
+.imagem_sobre_segunda{
+    width: 50%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE */
+    border-radius: 2%;
+}
+
+.imagem_index_primeira{
+    display: none;
+    width: 53%;
+    flex-direction: column;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE */
+    border-radius: 2%;
+}
+
+.imagem_index_segunda{
+    width: 53%;
+    flex-direction: column;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; /* IE */
+    border-radius: 2%;
+}
+
+.rodape{
+    color: var(--cor-terciaria);
+    background-color: var(--cor-primaria);
+    padding: 24px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media(max-width: 1000px){
+    .cabecalho{
+        padding: 1% 0% 0% 16%;
+    }
+
+    .cabecalho__menu{
+        display: flex;
+        gap: 40px;
+    }
+
+    .apresentacao{
+        padding: 4.57% 4%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .apresentacao__conteudo{
+        width: 100%;
+    }
+
+    .apresentacao__conteudo__titulo{
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+    .imagem_index_primeira{
+        width: 100%;
+        display: initial;
+    }
+    .imagem_index_segunda{
+        display: none;
+    }
+
+    .imagem_sobre_primeira{
+        width: 100%;
+        display: initial;
+    }
+
+    .imagem_sobre_segunda{
+        display: none;
+    }
+
+    .apresentacao__conteudo__texto{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .apresentacao__conteudo__links__subtitulo{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+
+}
