@@ -5,8 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio / Arian Weslley</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
 
     <!-- ICONS -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -14,48 +12,75 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <!-- END ICONS -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- END CSS -->
+
 </head>
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="pages/sobre.html">Sobre</a>
-            <a class="cabecalho__menu__link" href="assets/Arian Weslley - Junho 23.pdf" target="_blank">CV</a>
+    <div class="estrutura">
+        <header class="header">
+            <a href="https://navelogic.github.io/Portfolio/" class="logo" id="logo"><img src="assets/svg/Navelogic.svg" alt="Navelogic"></a>
+            <nav>
+                <ul>
+                    <li><a href="#">Curriculum vitæ</a></li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="sidenav">
+            <ul>
+                <li><a href="https://github.com/Navelogic" target="_blank"><img src="assets/svg/GitHub.svg" alt="Github Logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/arian-weslley-bb10a924b/" target="_blank"><img src="assets/svg/LinkedIn.svg" alt="LinkedIn Logo"></a></li>
+                <li><a href="https://x.com/@offarianweslley" target="_blank"><img src="assets/svg/X.com.svg" alt="X.com Logo"></a></li>
+                <li><a href="https://wa.me/5521976081066" target="_blank"><img src="assets/svg/Whatsapp.svg" alt="Whatsapp Logo"></a></li>
+            </ul>
         </nav>
-    </header>
-
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo"> Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com qualidade!</strong></h1>
-            <img src="assets/imagem.jpg" class="imagem_index_primeira" alt="Foto de Arian Weslley na praia">
-            <p class="apresentacao__conteudo__texto">
-                Olá! Me chamo Arian Weslley, sou um desenvolvedor Full-Stack apaixonado por tecnologia, com expertise em Java, Angular, HTML, CSS e Javascript/Typescript.
-            </p>
-            
-            <div class="apresentacao__conteudo__links">
-                <h2 class="apresentacao__conteudo__links__subtitulo">Acesse minhas redes:</h2>
-
-                <a class="apresentacao__conteudo__links__link" href="https://twitter.com/offarianweslley" target="_blank">
-                    <img src="assets/twitter.png" alt="Logo do Twitter">
-                    Twitter
-                </a>
-
-                <a class="apresentacao__conteudo__links__link" href="https://www.linkedin.com/in/arian-weslley-bb10a924b/" target="_blank">
-                    <img src="assets/linkedin.png" alt="Logo do Linkedin">
-                    Linkedin
-                </a>
-
-                <a class="apresentacao__conteudo__links__link" href="https://github.com/Navelogic" target="_blank">
-                    <img src="assets/github.png" alt="Logo do Github">
-                    Github
-                </a>
+        <main class="content">
+            <div class="titulo">
+                <h1>Eleve seu negócio digital a outro nível <strong class="titulo-destaque">com qualidade!</strong></h1>
             </div>
-        </section>
-        <img src="assets/imagem.jpg" class="imagem_index_segunda" alt="Foto de Arian Weslley na praia">
-    </main>
+            <div class="caracteristicas">
+                <div>
+                    <span class="numero">6</span>
+                    <span class="rotulo">meses na área</span>
+                </div>
+                <div>
+                    <span class="numero">86</span>
+                    <span class="rotulo">seguidores</span>
+                </div>
+                <div>
+                    <span class="numero">2</span>
+                    <span class="rotulo">formações na alura</span>
+                </div>
+            </div>
 
-    <footer class="rodape">
-        <p class="rodape__texto">Desenvolvido com ❤️ por Arian Weslley</p>
-    </footer>
+            <img src="assets/img/navelogic.jpg" alt="Arian Weslley de perfil, praia ao fundo." class="col-wide imagem-1">
+
+            <p class="col-wide">Olá! Me chamo Arian Weslley, sou um desenvolvedor Full-Stack apaixonado por tecnologia, com expertise em Java, Angular, HTML, CSS e Javascript/Typescript.</p>
+
+            <img src="assets/img/senac.jpg" alt="Turma do Senac 21.1 reunida ao redor do professor Fabiano.">
+
+            <p>No curso de técnico de informática tive a oportunidade de ampliar meus conhecimentos nas tecnologias de programação, como PHP, Java e Typescript. Além disso, adquiri habilidades na construção de aplicações web com HTML, CSS, Javascript, Angular e Ionic, tornando-me apto a atuar como desenvolvedor Full-Stack.</p>
+
+            <p>Mas, dentro do Senac também fiz outro curso super essencial para meu aprendizado! No curso de PHP com Programação Orientada a Objetos, tive a oportunidade de ampliar meus conhecimentos na linguagem, aprendendo conceitos básicos e intermediários. Além disso, outro ponto fundamental destacado no curso foi o uso de padrões de projeto, como MVC e Arquitetura Limpa, que permitiram aplicar os conceitos em projetos práticos.</p>
+
+            <blockquote class="citacao col-wide">
+                <p>“💫 Fecho os olhos e vejo códigos.”</p>
+            </blockquote>
+
+            <ul class="atributos">
+                <li>Nasci em 20/12/2001</li>
+                <li>Botafoguense</li>
+                <li>De Niterói</li>
+                <li>Java 🤝 Angular</li>
+                <li>Sempre estudando</li>
+            </ul>
+        </main>
+        <aside class="x">
+            <a class="twitter-timeline" href="https://twitter.com/offarianweslley?ref_src=twsrc%5Etfw">Tweets by offarianweslley</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </aside>
+    </div>
 </body>
 </html>
